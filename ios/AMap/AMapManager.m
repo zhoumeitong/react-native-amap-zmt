@@ -16,9 +16,6 @@ RCT_EXPORT_MODULE()
 
 RCT_EXPORT_VIEW_PROPERTY(AMapKey, NSString)
 
-//RCT_EXPORT_VIEW_PROPERTY(finishLoadLocation, FinishLoadLocation)
-
-//RCT_EXPORT_VIEW_PROPERTY(failLoadLocation, RCTBubblingEventBlock)
 RCT_EXPORT_VIEW_PROPERTY(onChange, RCTBubblingEventBlock)
 
 - (UIView *)view

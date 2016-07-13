@@ -85,11 +85,9 @@
 }
 #pragma mark 搜索请求发起后的回调
 /**失败回调*/
--(void)AMapSearchRequest:(id)request didFailWithError:(NSError *)error{
+-(void)AMapSearchRequest:(id)request didFailWithError:(NSError *)error
+{
     
-    if ([self.delegate respondsToSelector:@selector(currentLocationViewFailLoadLocation:)]) {
-        [self.delegate currentLocationViewFailLoadLocation:self];
-    }
     NSLog(@"request: %@------error:  %@",request,error);
     
 }
@@ -106,9 +104,6 @@
     _mapView.userLocation.title = title;
     _mapView.userLocation.subtitle = response.regeocode.formattedAddress;
     
-    if ([self.delegate respondsToSelector:@selector(currentLocationViewFinishLoadLocation:)]) {
-        [self.delegate currentLocationViewFinishLoadLocation:self];
-    }
     
     if (!self.onChange) {
         return;
