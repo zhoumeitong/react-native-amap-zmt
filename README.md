@@ -23,7 +23,7 @@
 在 TARGETS->Build Phases-> Link Binary With Libaries 中点击“+”按钮，在弹出的窗口中点击“Add Other”按钮，选择AMap插件目录下的 MAMapKit.framework、AMapFoundationKit.framework、AMapSearchKit.framework 文件添加到工程中。
 
 2、引入系统库
-左侧目录中选中工程名，在TARGETS->Build Settings-> Link Binary With Libaries中点击“+”按钮，在弹出的窗口中查找并选择所需的库（见下图），单击“Add”按钮，将库文件添加到工程中。
+左侧目录中选中工程名，在TARGETS->Build Phases-> Link Binary With Libaries中点击“+”按钮，在弹出的窗口中查找并选择所需的库（见下图），单击“Add”按钮，将库文件添加到工程中。
 
 ![](http://upload-images.jianshu.io/upload_images/2093433-dfaa1c175417c421.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
