@@ -297,4 +297,4 @@ module.exports = AMapView;
 
 效果展示
 
-![](http://upload-images.jianshu.io/upload_images/2093433-a00dc88d746626d4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://upload-images.jianshu.io/upload_images/2093433-518538dbec41b812.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
