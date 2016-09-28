@@ -18,6 +18,7 @@
 
 1、引入地图库
 在 TARGETS->Build Phases-> Link Binary With Libaries 中点击“+”按钮，在弹出的窗口中点击“Add Other”按钮，选择AMap插件目录下的 MAMapKit.framework、AMapFoundationKit.framework、AMapSearchKit.framework 文件添加到工程中。
+
 2、引入资源文件
 需要引入的资源文件包括：AMap.bundle，其中：AMap.bundle 在 MAMapKit.framework 的 Resources文件夹下，AMap.bundle资源文件中存储了定位、默认大头针标注视图等图片，可利用这些资源图片进行开发。
 左侧目录中选中工程名，在右键菜单中选择Add Files to “工程名”…，从MAMapKit.framework->Resources文件中选择AMap.bundle文件，并勾选“Copy items if needed”复选框，单击“Add”按钮，将资源文件添加到工程中。
