@@ -10,6 +10,9 @@
 		D45DF2CF1D2F6B01009964C1 /* AMap.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D45DF2CE1D2F6B01009964C1 /* AMap.h */; };
 		D45DF2D11D2F6B01009964C1 /* AMap.m in Sources */ = {isa = PBXBuildFile; fileRef = D45DF2D01D2F6B01009964C1 /* AMap.m */; };
 		D45DF2DC1D2F6C16009964C1 /* AMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D45DF2DB1D2F6C16009964C1 /* AMapManager.m */; };
+		D4DF9F141D9921AB0094D8C8 /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DF9F111D9921AB0094D8C8 /* AMapFoundationKit.framework */; };
+		D4DF9F151D9921AB0094D8C8 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DF9F121D9921AB0094D8C8 /* AMapSearchKit.framework */; };
+		D4DF9F161D9921AB0094D8C8 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DF9F131D9921AB0094D8C8 /* MAMapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,7 +34,10 @@
 		D45DF2D01D2F6B01009964C1 /* AMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMap.m; sourceTree = "<group>"; };
 		D45DF2DA1D2F6C16009964C1 /* AMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapManager.h; sourceTree = "<group>"; };
 		D45DF2DB1D2F6C16009964C1 /* AMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMapManager.m; sourceTree = "<group>"; };
-		D45DF2F01D2F6FD7009964C1 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = MAMapKit.framework/AMap.bundle; sourceTree = "<group>"; };
+		D4DF9F111D9921AB0094D8C8 /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapFoundationKit.framework; sourceTree = "<group>"; };
+		D4DF9F121D9921AB0094D8C8 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
+		D4DF9F131D9921AB0094D8C8 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
+		D4DF9F171D9922740094D8C8 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = MAMapKit.framework/AMap.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4DF9F161D9921AB0094D8C8 /* MAMapKit.framework in Frameworks */,
+				D4DF9F151D9921AB0094D8C8 /* AMapSearchKit.framework in Frameworks */,
+				D4DF9F141D9921AB0094D8C8 /* AMapFoundationKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +73,10 @@
 		D45DF2CD1D2F6B01009964C1 /* AMap */ = {
 			isa = PBXGroup;
 			children = (
-				D45DF2F01D2F6FD7009964C1 /* AMap.bundle */,
+				D4DF9F171D9922740094D8C8 /* AMap.bundle */,
+				D4DF9F111D9921AB0094D8C8 /* AMapFoundationKit.framework */,
+				D4DF9F121D9921AB0094D8C8 /* AMapSearchKit.framework */,
+				D4DF9F131D9921AB0094D8C8 /* MAMapKit.framework */,
 				D45DF2CE1D2F6B01009964C1 /* AMap.h */,
 				D45DF2D01D2F6B01009964C1 /* AMap.m */,
 				D45DF2DA1D2F6C16009964C1 /* AMapManager.h */,
@@ -174,7 +186,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -212,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
