@@ -2,7 +2,7 @@
 高德地图插件
 
 功能：
-通过高德地图实现定位，返回地理位置经纬度坐标
+通过高德地图实现定位，返回地理位置经纬度坐标及地理名称，实现地理编码查询、兴趣点查询。
 
 一、链接AMap库
 参考http://reactnative.cn/docs/0.28/linking-libraries-ios.html#content
