@@ -2,5 +2,5 @@
   "name": "react-native-amap",
   "version": "0.0.1",
   "description": " AMap SDK For React Native",
-  "main": "index.js",
+  "main": "index.js"
 }

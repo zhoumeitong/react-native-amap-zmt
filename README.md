@@ -73,7 +73,8 @@ NSLocationAlwaysUsageDescription
 //index.ios.js
 
 import React, { Component } from 'react';
-import Map from './amap.js';
+//import Map from './amap.js';
+import Map from 'react-native-amap';
 
 import {
 AppRegistry,
