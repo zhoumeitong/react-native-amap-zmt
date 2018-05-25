@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Map from 'react-native-amap';
+import Map from 'react-native-amap-zmt';
 
 import {
   AppRegistry,

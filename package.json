@@ -1,6 +1,23 @@
 {
-  "name": "react-native-amap",
-  "version": "0.0.1",
-  "description": " AMap SDK For React Native",
-  "main": "index.js"
+  "name": "react-native-amap-zmt",
+  "version": "1.0.0",
+  "description": " AMap For React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhoumeitong/react-native-amap-zmt.git"
+  },
+  "keywords": [
+    "amap",
+    "ios"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhoumeitong/react-native-amap-zmt/issues"
+  },
+  "homepage": "https://github.com/zhoumeitong/react-native-amap-zmt#readme"
 }

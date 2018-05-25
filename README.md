@@ -88,7 +88,7 @@ NSLocationAlwaysAndWhenInUseUsageDescription 申请Always权限，以便应用�
 //index.ios.js
 
 import React, { Component } from 'react';
-import Map from 'react-native-amap';
+import Map from 'react-native-amap-zmt';
 
 import {
 AppRegistry,
