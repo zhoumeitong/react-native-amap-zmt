@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Map from './amap.js';
 import Map from 'react-native-amap';
 
 import {
@@ -12,7 +11,7 @@ import {
   TextInput,
 } from 'react-native';
 
-class MapView extends Component {
+export default class MapView extends Component {
 
   constructor(){
     super();
@@ -28,6 +27,8 @@ class MapView extends Component {
       AroundName:'',
     }
   }
+
+  //获取当前位置信息
   _onGetLocation(event){
       this.setState({
         latitude: event['latitude'],
@@ -39,26 +40,21 @@ class MapView extends Component {
   }
 
   _onGeocodeSearch(event){
-      // this.setState({
-      //   GeoName:'北京久其软件',
-      // });
-}
+    AlertIOS.alert(event['message'])
+  }
 
   _onSubmitEditing(event) {
     this.setState({
         // GeoName:'北京久其软件',
         // AroundName:'肯德基',
-        // KeywordsName:'肯德基',
         KeywordsName:event.nativeEvent.text,
         KeywordsCity:'北京',
 
       });
-    // AlertIOS.alert(event.nativeEvent.text);
-
   }
     
   _onChangeText(text) {
-  
+    
   }
 
 
@@ -72,14 +68,14 @@ class MapView extends Component {
                    placeholderTextColor="#494949" autoFocus={false} 
                    onChangeText={this._onChangeText}/>
 
-          <Text>{'纬度='+this.state.latitude}</Text>
-          <Text>{'经度='+this.state.longitude}</Text>
-          <Text>{this.state.title}</Text>
-          <Text>{this.state.subtitle}</Text>
-          <Text>{this.state.message}</Text>
+          <Text style={{marginTop:10}}>{'纬度='+this.state.latitude}</Text>
+          <Text style={{marginTop:5}}>{'经度='+this.state.longitude}</Text>
+          <Text style={{marginTop:5}}>{'title='+this.state.title}</Text>
+          <Text style={{marginTop:5}}>{'subtitle='+this.state.subtitle}</Text>
+          <Text style={{marginTop:5}}>{'结果='+this.state.message}</Text>
 
         <Map style={styles.map} 
-          AMapKey="01cf276cff7929b9f0931f8c3fb9b4ce" 
+          AMapKey="04a46bd238047b8bf33fba5723ecad72" 
           onGetLocation={(event)=>{this._onGetLocation(event)}} 
           showTraffic={true} 
           scrollEnabled={false} 
@@ -110,12 +106,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
   },
   map: {
-    height:300,
+    marginTop:10,
+    height:400,
     width:Dimensions.get('window').width - 20,
   },
   search: {
-    marginLeft: 10,
-    marginRight: 10,
+    width:Dimensions.get('window').width - 20,
     height: 35,
     borderWidth: 1,
     borderColor: '#ccc',
@@ -126,4 +122,3 @@ const styles = StyleSheet.create({
 });
 
 
-AppRegistry.registerComponent('TextReactNative', () => MapView);

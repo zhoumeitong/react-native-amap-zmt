@@ -33,18 +33,6 @@
     return self;
 }
 
-//- (instancetype)initWithFrame:(CGRect)frame andKey:(NSString *)key
-//{
-//    if (self = [super initWithFrame:frame]) {
-//        
-//        [self initMapView];
-//        self.AMapKey = key;
-//        self.AMapKey = @"1457e2d9d8d675c685e7fd8582acd620";
-//    }
-//    
-//    return self;
-//}
-
 #pragma mark 创建地图
 -(void)initMapView
 {

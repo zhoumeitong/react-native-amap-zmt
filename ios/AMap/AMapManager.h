@@ -6,8 +6,7 @@
 //  Copyright © 2016年 cn.com.jiuqi. All rights reserved.
 //
 
-#import "RCTViewManager.h"
-
+#import <React/RCTViewManager.h>
 
 @interface AMapManager : RCTViewManager
 

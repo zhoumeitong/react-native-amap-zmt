@@ -7,7 +7,7 @@
 //
 
 #import "AMapManager.h"
-#import "RCTViewManager.h"
+
 #import "AMap.h"
 
 @implementation AMapManager

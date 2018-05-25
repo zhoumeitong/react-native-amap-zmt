@@ -7,23 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D45DF2CF1D2F6B01009964C1 /* AMap.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D45DF2CE1D2F6B01009964C1 /* AMap.h */; };
+		D45DF2CF1D2F6B01009964C1 /* AMap.h in Copy Files */ = {isa = PBXBuildFile; fileRef = D45DF2CE1D2F6B01009964C1 /* AMap.h */; };
 		D45DF2D11D2F6B01009964C1 /* AMap.m in Sources */ = {isa = PBXBuildFile; fileRef = D45DF2D01D2F6B01009964C1 /* AMap.m */; };
 		D45DF2DC1D2F6C16009964C1 /* AMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D45DF2DB1D2F6C16009964C1 /* AMapManager.m */; };
-		D4DF9F141D9921AB0094D8C8 /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DF9F111D9921AB0094D8C8 /* AMapFoundationKit.framework */; };
-		D4DF9F151D9921AB0094D8C8 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DF9F121D9921AB0094D8C8 /* AMapSearchKit.framework */; };
-		D4DF9F161D9921AB0094D8C8 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DF9F131D9921AB0094D8C8 /* MAMapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D45DF2C91D2F6B01009964C1 /* CopyFiles */ = {
+		D45DF2C91D2F6B01009964C1 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				D45DF2CF1D2F6B01009964C1 /* AMap.h in CopyFiles */,
+				D45DF2CF1D2F6B01009964C1 /* AMap.h in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -34,10 +32,6 @@
 		D45DF2D01D2F6B01009964C1 /* AMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMap.m; sourceTree = "<group>"; };
 		D45DF2DA1D2F6C16009964C1 /* AMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapManager.h; sourceTree = "<group>"; };
 		D45DF2DB1D2F6C16009964C1 /* AMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMapManager.m; sourceTree = "<group>"; };
-		D4DF9F111D9921AB0094D8C8 /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapFoundationKit.framework; sourceTree = "<group>"; };
-		D4DF9F121D9921AB0094D8C8 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
-		D4DF9F131D9921AB0094D8C8 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
-		D4DF9F171D9922740094D8C8 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = MAMapKit.framework/AMap.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,20 +39,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4DF9F161D9921AB0094D8C8 /* MAMapKit.framework in Frameworks */,
-				D4DF9F151D9921AB0094D8C8 /* AMapSearchKit.framework in Frameworks */,
-				D4DF9F141D9921AB0094D8C8 /* AMapFoundationKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F13475620B7D9BC00B3EBE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D45DF2C21D2F6B01009964C1 = {
 			isa = PBXGroup;
 			children = (
 				D45DF2CD1D2F6B01009964C1 /* AMap */,
 				D45DF2CC1D2F6B01009964C1 /* Products */,
+				4F13475620B7D9BC00B3EBE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,10 +72,6 @@
 		D45DF2CD1D2F6B01009964C1 /* AMap */ = {
 			isa = PBXGroup;
 			children = (
-				D4DF9F171D9922740094D8C8 /* AMap.bundle */,
-				D4DF9F111D9921AB0094D8C8 /* AMapFoundationKit.framework */,
-				D4DF9F121D9921AB0094D8C8 /* AMapSearchKit.framework */,
-				D4DF9F131D9921AB0094D8C8 /* MAMapKit.framework */,
 				D45DF2CE1D2F6B01009964C1 /* AMap.h */,
 				D45DF2D01D2F6B01009964C1 /* AMap.m */,
 				D45DF2DA1D2F6C16009964C1 /* AMapManager.h */,
@@ -94,7 +89,7 @@
 			buildPhases = (
 				D45DF2C71D2F6B01009964C1 /* Sources */,
 				D45DF2C81D2F6B01009964C1 /* Frameworks */,
-				D45DF2C91D2F6B01009964C1 /* CopyFiles */,
+				D45DF2C91D2F6B01009964C1 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -238,12 +233,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/AMap",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
-				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -257,12 +247,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/AMap",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
-				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
