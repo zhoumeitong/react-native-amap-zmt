@@ -31,22 +31,22 @@
 
 
 /**地理编码查询名称*/
-@property (nonnull,strong) NSString *GeoName;
-/**地理编码查询*/
+@property (nonatomic,strong) NSString *GeoName;
+/**地理编码查询结果回调*/
 @property (nonatomic, copy) RCTBubblingEventBlock _Nullable onGeocodeSearch;
 
 
 /**关键字检索城市*/
-@property (nonnull,strong) NSString *KeywordsCity;
+@property (nonatomic,strong) NSString *KeywordsCity;
 /**关键字检索名称*/
-@property (nonnull,strong) NSString *KeywordsName;
-/**关键字检索*/
+@property (nonatomic,strong) NSString *KeywordsName;
+/**关键字检索结果回调*/
 @property (nonatomic, copy) RCTBubblingEventBlock _Nonnull onKeywordsSearch;
 
 
 /**周边检索名称*/
-@property (nonnull,strong) NSString *AroundName;
-/**周边检索*/
+@property (nonatomic,strong) NSString *AroundName;
+/**周边检索结果回调*/
 @property (nonatomic, copy) RCTBubblingEventBlock _Nonnull onAroundSearch;
 
 

@@ -31,21 +31,25 @@ class AMapView extends React.Component {
 
     //地理编码查询名称
     GeoName:PropTypes.string,
-    //地理编码查询
+    //地理编码查询结果回调
     onGeocodeSearch:PropTypes.func,
 
     //关键字检索城市
     KeywordsCity:PropTypes.string,
     //关键字检索名称
     KeywordsName:PropTypes.string,
-    //关键字检索
+    //关键字检索结果回调
     onKeywordsSearch:PropTypes.func,
 
     //周边检索名称
     AroundName:PropTypes.string,
-    //周边检索
+    //周边检索结果回调
     onAroundSearch:PropTypes.func,
   };
+
+  static defaultProps = {
+      
+  }
 
   _onGetLocation(event: Event) {
     if (!this.props.onGetLocation) {
@@ -77,11 +81,11 @@ class AMapView extends React.Component {
 
   render() {
     return <AMap {...this.props} 
-    onGetLocation={this._onGetLocation} 
-    onGeocodeSearch={this._onGeocodeSearch} 
-    onKeywordsSearch={this._onKeywordsSearch} 
-    onAroundSearch={this._onAroundSearch}
-    />;
+            onGetLocation={this._onGetLocation} 
+            onGeocodeSearch={this._onGeocodeSearch} 
+            onKeywordsSearch={this._onKeywordsSearch} 
+            onAroundSearch={this._onAroundSearch}
+            />;
   }
 }
 
