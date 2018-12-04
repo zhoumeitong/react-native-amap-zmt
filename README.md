@@ -110,6 +110,8 @@ KeywordsCity | string | null | 关键字检索城市，和关键字检索名称�
 KeywordsName | string | null | 关键字检索名称，和关键字检索城市配合使用
 AroundName | string | null | 周边检索名称
 
+##### 方法
+
 Event Name | Returns | Notes 
 ------ | ---- | -------
 onGetLocation | event | 获取当前位置信息
